@@ -1,0 +1,15 @@
+// Показать натуральные числа от M до N, N и M заданы
+Console.WriteLine("Введите число N ");
+int N = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите число M ");
+int M = Convert.ToInt32(Console.ReadLine());
+Print(N, M);
+void Print(int n, int m)
+{
+if (n == m) Console.Write(n);
+else
+{
+Print(n + 1, m);
+Console.Write(($" {n} "));
+}
+}
